@@ -1,0 +1,113 @@
+@media only screen and (max-width:365px) {
+
+ .cont{
+     
+    min-height: 280px;
+ }
+ .cont.active{
+    min-height: 480px;
+
+ }
+
+}
+    
+
+   
+
+
+*{
+    margin: 0;
+
+    padding: 0;
+}
+
+body{
+    background: rgb(201, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.cont{
+    max-height: 200px;
+    background-color: aliceblue;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 20px;
+    padding: 10px;
+    transition: height 0.3s ease-in-out;
+}
+.cont.active{
+    max-height: 400px;
+
+}
+
+h1{
+    border-bottom: 1px solid black;
+}
+.cont .texts{
+    text-align: center;
+    margin: 20px 2px;
+}
+.cont .texts p{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.cont .inbtn{
+    display: flex;
+    flex-direction: column;
+}
+.cont .inbtn input{
+    padding: 5px 10px;
+    height: 25px;
+    font-size: 17px;
+    border-radius: 8px;
+       border: 1px solid black;
+}
+.cont .inbtn button {
+    border-radius: 8px;
+    padding: 5px 10px;
+    height: 35px;
+    margin-top: 15px;
+    background-color: #42c4c4;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+
+.cont .inbtn button:hover{
+    background-color: aquamarine;
+    
+
+}
+.qrimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 0px;
+    cursor: pointer;
+    opacity: 0;
+    border: 1px solid black;
+    border-radius: 18px;
+    pointer-events: none;
+    
+   
+}
+.cont.active .qrimg
+{
+    opacity: 1;
+    pointer-events:auto;
+    transition: opacity 1s ease;
+
+}
+
+.qrimg img{
+    height: 170px;
+    width: 170px;
+
+}
+
+
