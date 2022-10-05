@@ -7,7 +7,9 @@ qrbtns.addEventListener('click', () => {
     
 
     let qrinner = qrtxt.value;  //value means texts  inner userdefine input 
-    if (!qrinner) return;
+    if (!qrinner) {
+        alert("enter text or url")
+    };
     // if qrinner value is empty then retun from here dont activet active class
     qrbtns.innerText = "Loading QR Code";   
     qrimg.src = `https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${qrinner}`
